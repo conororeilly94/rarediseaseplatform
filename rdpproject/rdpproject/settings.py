@@ -26,7 +26,7 @@ SECRET_KEY = 'gett&o2#2&9xj-7w^du#5%isph)i^65n=k^$%dne70fl)1xm#d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rarediseaseplatform.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['rarediseaseplatform.herokuapp.com']
 
 
 # Application definition
@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'manager',
     'newsletter',    
     'comment',
-    'storages'
 ]
 
 MIDDLEWARE = [
@@ -136,22 +135,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/
-
-# AWS_ACCESS_KEY_ID = 'AKIATLYH3V65NMO7BSNQ'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'conororeilly-rdp1-bucket'
-
-# AWS_S3_FILE_OVERWRITE = False
-# AWS_DEFAULT_ACL = None
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
-
-# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-
-# AWS_S3_OBJECT_PARAMETERS = {
-#     'CacheControl': 'max-age=86400',
-# }
-
-# AWS_S3_HOST = 's3.eu-west-1.amazonaws.com'
-# S3_USE_SIGV4 = True
-# WS_S3_REGION_NAME = 'eu-west-1b'
