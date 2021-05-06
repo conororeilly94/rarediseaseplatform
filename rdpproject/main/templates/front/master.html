@@ -81,9 +81,6 @@
             </div>
             <div class="flex-wr-e-c">
               <div class="left-topbar">
-                {% if user.is_authenticated %}
-                  <a href="/publicchat/chat" class="left-topbar-item"> Live Chat </a>
-                {% endif %}
                 <a href="/" class="left-topbar-item">Home</a>
                 <a href="/about" class="left-topbar-item"> About </a>
                 <a href="/contact" class="left-topbar-item"> Contact </a>
@@ -225,12 +222,12 @@
             <div class="col-lg-4 p-b-20">
               <div class="size-h-3 flex-s-c">
                 <a href="/">
-                  <img class="max-s-full" src="{{site.logourl2}}" alt="LOGO"/>
+                  <img class="max-s-full" src="{{site.logourl2}}" style="margin-bottom: -20px" alt="LOGO"/>
                 </a>
               </div>
               <br/><br/>
               <div>
-                <p class="f1-s-1 cl11 p-b-16">
+                <p class="f1-s-1 cl11 p-b-16" style="margin-top: 10px;">
                   {{site.about | safe}}
                 </p>
                 <br/>
