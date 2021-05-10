@@ -75,7 +75,6 @@ def posts_detail_short(request, pk):
 
 
 def posts_list(request):
-
     # Authenticating user
     if not request.user.is_authenticated:
         return redirect('mylogin')
@@ -153,7 +152,7 @@ def posts_add(request):
         try: 
 
             myfile = request.FILES['myfile']
-            fs = FileSystemStorage() # Make an object
+            fs = FileSystemStorage()
             filename = fs.save(myfile.name, myfile)
             url = fs.url(filename)
 
@@ -164,8 +163,9 @@ def posts_add(request):
                     postname = SubCategory.objects.get(pk=postid).name
                     ocatid = SubCategory.objects.get(pk=postid).catid
 
-                    b = Posts(name = poststitle, short_txt = postsummary, body_txt = postbody, date = today, img = filename, imgurl = url, 
-                                author = request.user, catname = postname, catid = postid, views = 0, time = time, ocatid = ocatid, tag = tag, rand=rand)
+                    b = Posts(name = poststitle, short_txt = postsummary, body_txt = postbody, date = today, img = filename, 
+                                imgurl = url, author = request.user, catname = postname, catid = postid, views = 0, time = time, 
+                                ocatid = ocatid, tag = tag, rand=rand)
                     b.save()
 
                     count = len(Posts.objects.filter(ocatid = ocatid))

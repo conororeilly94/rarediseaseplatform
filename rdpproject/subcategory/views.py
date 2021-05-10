@@ -17,7 +17,7 @@ def subcat_list(request):
 
 def subcat_add(request):
 
-    # Authenticating user
+    ## Authenticating user
     if not request.user.is_authenticated:
         return redirect('mylogin')
     # End login check

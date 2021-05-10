@@ -16,7 +16,7 @@ class Posts(models.Model):
     author = models.CharField(max_length=50)
     catname = models.CharField(max_length=50, default='-')
     catid = models.IntegerField(default=0)    
-    ocatid = models.IntegerField(default=0) # Orig Category ID
+    ocatid = models.IntegerField(default=0)
     views = models.IntegerField(default=0)
     tag = models.TextField(default='')
     act = models.IntegerField(default=0)
@@ -25,3 +25,6 @@ class Posts(models.Model):
     def __str__(self):
         
         return self.name
+
+
+        

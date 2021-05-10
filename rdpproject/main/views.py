@@ -59,7 +59,6 @@ def mylogin(request):
 
     if request.method == 'POST':
 
-        # 182
         uuser = request.POST.get('username')
         upassword = request.POST.get('password')
 
