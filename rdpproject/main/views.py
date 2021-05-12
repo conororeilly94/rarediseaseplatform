@@ -1,3 +1,11 @@
+#################################
+########## REFERENCES ###########
+#### USED FOR MOST PY FILES #####
+#################################
+# Udemy. (2020). Python and Django Full Stack Web Developer Bootcamp. [Online] Available at: https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/learn/lecture/6637844?start=480#overview [Accessed 12 November 2020].
+# RealPython. (2020). Get Started with Django: Build a Portfolio App. [Online] Available at: https://realpython.com/get-started-with-django-1/ [Accessed 30 November 2020].
+# YouTube. (2019). Python Django Tutorial 2020 – Full Course for Beginners. [Online] Available at: https://www.youtube.com/watch?v=JT80XhYJdBw [Accessed 27 October 2020].
+
 # ACTIONS
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Main
@@ -216,7 +224,6 @@ def about_setting(request):
         return redirect('mylogin')
     # End login check
 
-    # Lect 224
     perm = 0
     for i in request.user.groups.all():
         if i.name == "masteruser" : perm = 1
