@@ -1,9 +1,6 @@
-
 (function ($) {
     "use strict";
 
-    /*==================================================================
-    [ Load page ]*/
     try {
         $(".animsition").animsition({
             inClass: 'fade-in',
@@ -26,9 +23,6 @@
         });
     } catch(er) {console.log(er);}
 
-    
-    /*==================================================================
-    [ Back to top ]*/
     try {
         var windowH = $(window).height()/2;
 
@@ -45,9 +39,6 @@
         });
     } catch(er) {console.log(er);}
 
-
-    /*==================================================================
-    [ Fixed menu ]*/
     try {
         var posNav = $('.wrap-main-nav').offset().top;
         var menuDesktop = $('.container-menu-desktop');
@@ -89,8 +80,6 @@
             
     } catch(er) {console.log(er);}
 
-    /*==================================================================
-    [ Menu mobile ]*/
     try {
         $('.btn-show-menu-mobile').on('click', function(){
             $(this).toggleClass('is-active');
@@ -124,9 +113,6 @@
         });
     } catch(er) {console.log(er);}
 
-
-    /*==================================================================
-    [ Respon tab01 ]*/
     try {
         $('.tab01').each(function(){
             var tab01 = $(this);
@@ -188,9 +174,6 @@
         });
     } catch(er) {console.log(er);}
         
-
-    /*==================================================================
-    [ Play video 01 ]*/
     try {
         var srcOld = $('.video-mo-01').children('iframe').attr('src');
 
@@ -208,9 +191,6 @@
         });
     } catch(er) {console.log(er);}
    
-
-    /*==================================================================
-    [ Tab mega menu ]*/
     try {
         $(window).on('load', function(){
             $('.sub-mega-menu .nav-pills > a').hover(function() {
@@ -218,9 +198,6 @@
             });
         });
     } catch(er) {console.log(er);}
-
-    /*==================================================================
-    [ Slide100 txt ]*/
 
     try {
         $('.slide100-txt').each(function(){
@@ -261,7 +238,6 @@
                 $(slideTxt).find('.slide100-txt-item.clone').addClass(animIn + ' visible-true');
             },5000); 
         });
-    } catch(er) {console.log(er);}
-            
+    } catch(er) {console.log(er);}  
 
 })(jQuery);

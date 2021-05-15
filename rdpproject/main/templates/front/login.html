@@ -14,7 +14,6 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 
         <!-- Icons -->
-        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
         <link rel="shortcut icon" href="{% static 'back/img/favicon.png' %}">
         <link rel="apple-touch-icon" href="{% static 'back/img/icon57.png' %}" sizes="57x57">
         <link rel="apple-touch-icon" href="{% static 'back/img/icon72.png' %}" sizes="72x72">
@@ -27,18 +26,16 @@
         <!-- END Icons -->
 
         <!-- Stylesheets -->
-        <!-- Bootstrap is included in its original form, unaltered -->
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="{% static 'back/css/bootstrap.min.css' %}">
 
         <!-- Related styles of various icon packs and plugins -->
         <link rel="stylesheet" href="{% static 'back/css/plugins.css' %}">
 
-        <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+        <!-- The main stylesheet -->
         <link rel="stylesheet" href="{% static 'back/css/main.css' %}">
 
-        <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
-
-        <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+        <!-- The themes stylesheet -->
         <link rel="stylesheet" href="{% static 'back/css/themes.css' %}">
         <!-- END Stylesheets -->
 
@@ -181,12 +178,10 @@
         </div>
         <!-- END Login Alternative Row -->
 
-        <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
         <script src="{% static 'back/js/vendor/jquery.min.js' %}"></script>
         <script src="{% static 'back/js/vendor/bootstrap.min.js' %}"></script>
         <script src="{% static 'back/js/plugins.js' %}"></script>
         <script src="{% static 'back/js/app.js' %}"></script>
-        <!-- Load and execute javascript code used only in this page -->
         <script src="{% static 'back/js/pages/login.js' %}"></script>
         <script>$(function(){ Login.init(); });</script>
     </body>

@@ -13,16 +13,13 @@
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-
         <title>Admin Panel</title>
-
         <meta name="description" content="ProUI is a Responsive Bootstrap Admin Template created by pixelcave and published on Themeforest.">
         <meta name="author" content="pixelcave">
         <meta name="robots" content="noindex, nofollow">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 
         <!-- Icons -->
-        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
         <link rel="shortcut icon" href="{% static 'back/img/favicon.png' %}">
         <link rel="apple-touch-icon" href="{% static 'back/img/icon57.png' %}" sizes="57x57">
         <link rel="apple-touch-icon" href="{% static 'back/img/icon72.png' %}" sizes="72x72">
@@ -35,18 +32,15 @@
         <!-- END Icons -->
 
         <!-- Stylesheets -->
-        <!-- Bootstrap is included in its original form, unaltered -->
         <link rel="stylesheet" href="{% static 'back/css/bootstrap.min.css' %}">
 
         <!-- Related styles of various icon packs and plugins -->
         <link rel="stylesheet" href="{% static 'back/css/plugins.css' %}">
 
-        <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+        <!-- The main stylesheet -->
         <link rel="stylesheet" href="{% static 'back/css/main.css' %}">
 
-        <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
-
-        <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+        <!-- The themes stylesheet -->
         <link rel="stylesheet" href="{% static 'back/css/themes.css' %}">
         <!-- END Stylesheets -->
 
@@ -58,9 +52,6 @@
     </head>
     <body>
         <div id="page-wrapper">
-            <!-- Preloader -->
-            <!-- Preloader functionality (initialized in js/app.js) - pageLoading() -->
-            <!-- Used only if page preloader is enabled from inc/config (PHP version) or the class 'page-loading' is added in #page-wrapper element (HTML version) -->
             <div class="preloader themed-background">
                 <h1 class="push-top-bottom text-light text-center"><strong>Admin</strong>Panel</h1>
                 <div class="inner">
@@ -87,10 +78,8 @@
                                         <img src="{% static 'back/img/placeholders/avatars/avatar2.jpg' %}" alt="avatar">                                    
                                 </div>
                                 <div class="sidebar-user-name">{{request.user}}</div>
-                                <div class="sidebar-user-links">
-                                    <!-- <a href="page_ready_user_profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a> -->
+                                <div class="sidebar-user-links">                                    
                                     <a href="/" data-toggle="tooltip" data-placement="bottom" title="Home Page"><i class="gi gi-home"></i></a>
-                                    <!-- Opens the user settings modal that can be found at the bottom of each page (page_footer.html in PHP version) -->
                                     <a href="/panel/change/pass/" class="enable-tooltip" data-placement="bottom" title="Settings"><i class="gi gi-cogwheel"></i></a>
                                     <a href="/logout" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="gi gi-exit"></i></a>
                                 </div>
@@ -252,7 +241,7 @@
         </div>
         <!-- END Page Wrapper -->
 
-        <!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
+        <!-- Scroll to top link -->
         <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
 
         <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
@@ -260,9 +249,6 @@
         <script src="{% static 'back/js/vendor/bootstrap.min.js' %}"></script>
         <script src="{% static 'back/js/plugins.js' %}"></script>
         <script src="{% static 'back/js/app.js' %}"></script>
-
-        <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
-        <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
         <script src="https://maps.googleapis.com/maps/api/js?key="></script>
         <script src="{% static 'back/js/helpers/gmaps.min.js' %}"></script>
 

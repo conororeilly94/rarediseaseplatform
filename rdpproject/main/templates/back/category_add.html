@@ -18,7 +18,6 @@
 </ul>
 <!-- END Datatables Header -->
 <!-- Page content -->
-
     <div class="row">
         <div class="col-md-12">
             <!-- Basic Form Elements Block -->
@@ -46,12 +45,10 @@
         </div>
     </div>
 
-
 {% endblock %}
 
 {% block footerblock %}
 
-<!-- Load and execute javascript code used only in this page -->
 <script src="{% static 'back/js/pages/tablesDatatables.js' %}"></script>
 <script>$(function(){ TablesDatatables.init(); });</script>
 
